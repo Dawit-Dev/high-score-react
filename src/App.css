@@ -38,7 +38,10 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  border : 1px blue solid;
+  border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    border-radius: 15px;
   padding: 10px;
   text-align: center;
   width: 800px;
@@ -47,19 +50,24 @@
 }
 .header {
   padding: 10px;
-  color: rgb(169, 229, 249)
+  color: white;
 }
 .main-table {
-  border: 5px lime solid;
-  margin-bottom: 10px;
+  border: 9px white solid;
+    border-radius: 15px;
+    background-color: #4b4b4b;
+  margin: 20px;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .table {
-  border: 1px black solid;
+  border: 2px white solid;
+    border-radius: 15px;
+
   padding: 10px;
   margin: 10px;
 }
 .results {
-  border: 1px black solid;
+  border: 2px white solid;
   display: flex;
   justify-items: auto;
   justify-content: space-between;
@@ -70,5 +78,4 @@
   display: flex;
   align-items: auto;
   justify-content: space-between;
-  color: red;
 }
