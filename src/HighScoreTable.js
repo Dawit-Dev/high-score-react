@@ -1,8 +1,10 @@
 import React from "react";
 const HighScoreTable = ({ scores }) => {
-  let eachCountry = scores.sort((a, b) => {
-    return a.name < b.name ? -1 : 1;
-  });
+  // let eachCountry = scores.sort((a, b) => {
+  //   return a.name < b.name ? -1 : 1;
+  // });
+  let eachCountry = [...scores];
+  eachCountry.sort((a, b) => (a.name < b.name ? -1 : 1));
   return (
     <div className="container">
       <h1 className="header">High Scores per country</h1>
